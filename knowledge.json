@@ -1,0 +1,11 @@
+{
+  "component": "knowledge",
+  "purpose": "Provides information the agent can use to answer questions and complete tasks.",
+  "sources": [
+    "documents",
+    "databases",
+    "content repositories",
+    "uploaded files",
+    "connected knowledge sources"
+  ]
+}
