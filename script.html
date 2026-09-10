@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI College Admission Agent</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f8fbff;
+    }
+
+    .hero-bg {
+      background:
+        radial-gradient(circle at 10% 20%, rgba(96, 165, 250, 0.25), transparent 30%),
+        radial-gradient(circle at 90% 80%, rgba(167, 139, 250, 0.25), transparent 30%),
+        linear-gradient(135deg, #eff6ff, #ffffff);
+    }
+
+    .floating {
+      animation: floating 4s ease-in-out infinite;
+    }
+
+    .floating-delay {
+      animation: floating 5s ease-in-out infinite;
+      animation-delay: 1s;
+    }
+
+    @keyframes floating {
+      0%, 100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* HERO TEXT ANIMATION */
+
+    .animate-word {
+      display: inline-block;
+      animation: slideUp 0.8s ease-out;
+    }
+
+    .dream-college {
+      display: inline-block;
+      color: #2563eb;
+      animation: popIn 1s ease-out 0.3s both;
+    }
+
+    .stress-free {
+      display: inline-block;
+      animation: slideUp 1s ease-out 0.6s both;
+    }
+
+    .graduation {
+      display: inline-block;
+      animation: capBounce 2s ease-in-out infinite;
+      transform-origin: bottom center;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes popIn {
+      from {
+        opacity: 0;
+        transform: scale(0.6);
+      }
+
+      70% {
+        transform: scale(1.08);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes capBounce {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      25% {
+        transform: translateY(-8px) rotate(-8deg);
+      }
+
+      50% {
+        transform: translateY(-14px) rotate(8deg);
+      }
+
+      75% {
+        transform: translateY(-6px) rotate(-4deg);
+      }
+    }
+  </style>
+</head>
+
+<body class="text-gray-900 min-h-screen">
+
+  <!-- HEADER -->
+  <header class="bg-white/90 backdrop-blur-lg border-b border-gray-200 sticky top-0 z-50">
+
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
+
+      <div class="flex items-center gap-3">
+
+        <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm">
+          <span class="text-xl">🎓</span>
+        </div>
+
+        <div>
+          <div class="font-extrabold text-gray-900">
+            AI COLLEGE ADMISSION AGENT
+          </div>
+
+          <div class="text-[10px] text-gray-400 font-medium">
+            COLLEGE GUIDANCE PORTAL
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hidden sm:flex items-center gap-2 text-xs font-semibold text-blue-700 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full">
+
+        <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+
+        Admissions Open • 2026-27
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- HERO -->
+  <main class="hero-bg min-h-[calc(100vh-64px)] relative overflow-hidden">
+
+    <!-- Decorative Elements -->
+
+    <div class="absolute top-16 left-[5%] text-4xl floating opacity-70">
+      📚
+    </div>
+
+    <div class="absolute top-32 right-[8%] text-4xl floating-delay opacity-70">
+      ✏️
+    </div>
+
+    <div class="absolute bottom-28 left-[12%] text-3xl floating-delay opacity-60">
+      ⭐
+    </div>
+
+    <div class="absolute bottom-20 right-[15%] text-4xl floating opacity-70">
+      🚀
+    </div>
+
+
+    <div class="max-w-6xl mx-auto px-5 py-14 lg:py-20">
+
+      <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+
+        <!-- LEFT CONTENT -->
+
+        <section>
+
+          <div class="inline-flex items-center gap-2 bg-white border border-blue-100 shadow-sm px-4 py-2 rounded-full text-xs font-bold text-blue-700 mb-6">
+
+            <span class="text-base">✨</span>
+
+            YOUR ADMISSION JOURNEY STARTS HERE
+
+          </div>
+
+
+          <!-- ANIMATED HEADING -->
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] tracking-tight">
+
+            <span class="animate-word">
+              Find Your
+            </span>
+
+            <br>
+
+            <span class="dream-college">
+              Dream College
+            </span>
+
+            <br>
+
+            <span class="stress-free">
+              Without The Stress
+            </span>
+
+            <span class="graduation">
+              🎓
+            </span>
+
+          </h1>
+
+
+          <p class="mt-6 text-base sm:text-lg text-gray-600 max-w-xl leading-relaxed">
+
+            Confused about colleges, courses, eligibility or fees?
+
+            Our admission support team is here to make your journey
+            simple, clear and stress-free.
+
+          </p>
+
+
+          <!-- AI CARD -->
+
+          <div class="mt-8 bg-white border border-blue-100 rounded-2xl p-5 shadow-lg shadow-blue-100/40 max-w-lg">
+
+            <div class="flex items-start gap-4">
+
+              <div class="w-12 h-12 shrink-0 rounded-xl bg-blue-100 flex items-center justify-center text-2xl">
+                🤖
+              </div>
+
+              <div>
+
+                <div class="font-bold text-gray-900">
+                  Meet Your AI Admission Assistant
+                </div>
+
+                <p class="text-sm text-gray-500 mt-1 leading-relaxed">
+
+                  Ask questions about courses, eligibility,
+                  applications, documents and admission dates.
+
+                </p>
+
+                <div class="mt-3 inline-flex items-center gap-2 text-xs font-bold text-blue-600">
+
+                  <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+
+                  AI Agent Available Now
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDE -->
+
+        <section class="relative">
+
+          <div class="bg-white rounded-[2rem] border border-gray-200 shadow-xl p-6 sm:p-8">
+
+            <div class="flex items-center justify-between mb-6">
+
+              <div>
+
+                <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">
+                  Admission Guide
+                </p>
+
+                <h2 class="text-xl font-extrabold text-gray-900 mt-1">
+                  Let's Get You Started 🚀
+                </h2>
+
+              </div>
+
+              <div class="text-3xl">
+                🎓
+              </div>
+
+            </div>
+
+
+            <!-- STEP 1 -->
+
+            <div class="space-y-4">
+
+              <div class="flex items-center gap-4 p-4 rounded-xl bg-blue-50 border border-blue-100">
+
+                <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold">
+                  1
+                </div>
+
+                <div>
+
+                  <div class="font-bold text-sm">
+                    Choose Your Course
+                  </div>
+
+                  <div class="text-xs text-gray-500">
+                    Explore UG & professional programs
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- STEP 2 -->
+
+              <div class="flex items-center gap-4 p-4 rounded-xl bg-purple-50 border border-purple-100">
+
+                <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold">
+                  2
+                </div>
+
+                <div>
+
+                  <div class="font-bold text-sm">
+                    Check Eligibility
+                  </div>
+
+                  <div class="text-xs text-gray-500">
+                    Understand requirements before applying
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <!-- STEP 3 -->
+
+              <div class="flex items-center gap-4 p-4 rounded-xl bg-yellow-50 border border-yellow-100">
+
+                <div class="w-10 h-10 bg-yellow-500 text-white rounded-full flex items-center justify-center font-bold">
+                  3
+                </div>
+
+                <div>
+
+                  <div class="font-bold text-sm">
+                    Apply With Confidence
+                  </div>
+
+                  <div class="text-xs text-gray-500">
+                    Get help with documents and applications
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- STATS -->
+
+            <div class="grid grid-cols-2 gap-3 mt-6 pt-6 border-t border-gray-100">
+
+              <div class="text-center">
+
+                <div class="text-lg font-extrabold text-blue-600">
+                  UG
+                </div>
+
+                <div class="text-[10px] text-gray-400">
+                  PROGRAMS
+                </div>
+
+              </div>
+
+
+              <div class="text-center border-l border-gray-100">
+
+                <div class="text-lg font-extrabold text-orange-500">
+                  24/7
+                </div>
+
+                <div class="text-[10px] text-gray-400">
+                  SUPPORT
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- FLOATING BADGE -->
+
+          <div class="absolute -bottom-5 -left-5 sm:-left-8 bg-white rounded-2xl shadow-lg border border-gray-100 px-4 py-3 floating">
+
+            <div class="flex items-center gap-3">
+
+              <div class="text-2xl">
+                💡
+              </div>
+
+              <div>
+
+                <div class="text-xs font-bold">
+                  Got a question?
+                </div>
+
+                <div class="text-[10px] text-gray-400">
+                  We're here to help!
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer class="bg-white border-t border-gray-200">
+
+    <div class="max-w-6xl mx-auto px-5 py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
+
+      <p class="text-xs text-gray-400">
+        © 2026 AI College Admission Agent. All rights reserved.
+      </p>
+
+      <p class="text-xs text-gray-400">
+        Helping students choose their future with confidence. 💙
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script>
+         window.wxOConfiguration = {
+    orchestrationID: "8da6f32abc954c76bbce047ab1598fd1_d63b8c18-f9b3-44ad-b4c2-6e098e0c9ed7",
+    hostURL: "https://au-syd.watson-orchestrate.cloud.ibm.com",
+    rootElementID: "root",
+    deploymentPlatform: "ibmcloud",
+    crn: "crn:v1:bluemix:public:watsonx-orchestrate:au-syd:a/8da6f32abc954c76bbce047ab1598fd1:d63b8c18-f9b3-44ad-b4c2-6e098e0c9ed7::",
+    chatOptions: {
+        agentId: "b69b232d-9365-435f-9248-dc570bb1fd74", 
+    }
+  };
+  setTimeout(function () {
+    const script = document.createElement('script');
+    script.src = `${window.wxOConfiguration.hostURL}/wxochat/wxoLoader.js?embed=true`;
+    script.addEventListener('load', function () {
+        wxoLoader.init();
+    });
+    document.head.appendChild(script);
+  }, 0);               
+  </script>
+
+</body>
+</html>
+```
