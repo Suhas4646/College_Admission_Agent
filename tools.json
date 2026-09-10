@@ -1,0 +1,11 @@
+{
+  "component": "tools",
+  "purpose": "Enables the agent to perform actions and interact with external systems.",
+  "examples": [
+    "API calls",
+    "database queries",
+    "workflow execution",
+    "sending emails",
+    "retrieving or updating records"
+  ]
+}
