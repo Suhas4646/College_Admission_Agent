@@ -1,0 +1,11 @@
+{
+  "component": "connections",
+  "purpose": "Manages access, authentication, and integration with external applications and services.",
+  "includes": [
+    "application identifiers",
+    "environment-specific configuration",
+    "credentials",
+    "authentication settings",
+    "access permissions"
+  ]
+}
