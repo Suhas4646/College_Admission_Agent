@@ -1,0 +1,68 @@
+{
+  "agent": {
+    "name": "Example Business Agent",
+    "description": "An AI agent that assists users with business tasks and information.",
+    "behavior": {
+      "instructions": [
+        "Act as a helpful business assistant.",
+        "Use available knowledge sources to provide accurate answers.",
+        "Use tools when an action or external information is required.",
+        "Ask for clarification when the user's request is ambiguous.",
+        "Escalate requests when they require human approval."
+      ],
+      "tone": "professional",
+      "response_style": "concise",
+      "guardrails": {
+        "avoid_hallucination": true,
+        "ask_for_clarification_when_unclear": true
+      }
+    },
+    "tools": [
+      {
+        "name": "search_customer_records",
+        "type": "api",
+        "description": "Searches customer records.",
+        "enabled": true
+      },
+      {
+        "name": "send_email",
+        "type": "api",
+        "description": "Sends an email to a specified recipient.",
+        "enabled": true
+      }
+    ],
+    "knowledge": [
+      {
+        "name": "company_policies",
+        "type": "document_repository",
+        "description": "Company policies and procedures.",
+        "source": "internal_repository"
+      },
+      {
+        "name": "product_documentation",
+        "type": "knowledge_base",
+        "description": "Product specifications and documentation.",
+        "source": "vector_store"
+      }
+    ],
+    "connections": [
+      {
+        "name": "crm_system",
+        "type": "external_service",
+        "description": "Connection to the organization's CRM.",
+        "authentication": "managed"
+      },
+      {
+        "name": "email_service",
+        "type": "external_service",
+        "description": "Connection used for sending emails.",
+        "authentication": "managed"
+      }
+    ],
+    "collaborators": [],
+    "configuration": {
+      "memory_enabled": false,
+      "reasoning_visible": false
+    }
+  }
+}
