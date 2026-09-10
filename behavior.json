@@ -1,0 +1,11 @@
+{
+  "component": "behavior",
+  "purpose": "Defines how the agent acts and responds.",
+  "includes": [
+    "instructions",
+    "guidelines",
+    "tone and style",
+    "decision-making rules",
+    "fallback and escalation behavior"
+  ]
+}
