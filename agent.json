@@ -1,0 +1,5 @@
+{
+  "name": "IBM AI Agent",
+  "description": "A configurable agent composed of behavior, tools, knowledge, and connections.",
+  "source_context": "IBM documentation describes agents as configurable systems that define what they know, how they behave, what they can do, and how they interact with external systems."
+}
